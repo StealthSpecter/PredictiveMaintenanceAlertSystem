@@ -32,28 +32,7 @@ Critical alert generation properties have been formally verified using the SPIN 
 - No false alerts (low probability events don't trigger unnecessary alerts)
 - Thread-safe concurrent operation
 
-## Project Structure
-PredictiveMaintenanceAlertSystem/
-├── alert_generator.py       # Main module implementation
-├── alert_processor.py       # Alert processing and notification logic
-├── main.py                  # Demo script
-├── models/
-│   ├── init.py
-│   ├── alert.py             # Alert data models
-│   └── prediction.py        # Prediction data models
-├── utils/
-│   ├── init.py
-│   ├── config.py            # Configuration parameters
-│   └── logger.py            # Logging utilities
-├── tests/
-│   ├── init.py
-│   ├── test_alert_generator.py
-│   └── test_alert_processor.py
-├── verification/
-│   └── alert_model.pml      # Promela model for SPIN verification
-└── docs/
-└── diagrams/            # System diagrams
-## Setup Instructions
+<pre> ## Project Structure ``` PredictiveMaintenanceAlertSystem/ ├── alert_generator.py # Main module implementation ├── alert_processor.py # Alert processing and notification logic ├── main.py # Demo script ├── models/ │ ├── __init__.py │ ├── alert.py # Alert data models │ └── prediction.py # Prediction data models ├── utils/ │ ├── __init__.py │ ├── config.py # Configuration parameters │ └── logger.py # Logging utilities ├── tests/ │ ├── __init__.py │ ├── test_alert_generator.py │ └── test_alert_processor.py ├── verification/ │ └── alert_model.pml # Promela model for SPIN verification ├── docs/ # Documentation files └── diagrams/ # System diagrams ``` </pre>
 
 ### Prerequisites
 - Python 3.9 or higher
