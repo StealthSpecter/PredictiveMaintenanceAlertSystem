@@ -1,0 +1,5 @@
+# Test dependencies
+coverage==7.3.2
+pytest==7.4.0
+
+# No external runtime dependencies - built with standard library
