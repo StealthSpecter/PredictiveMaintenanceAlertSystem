@@ -33,3 +33,63 @@ Critical alert generation properties have been formally verified using the SPIN 
 - Thread-safe concurrent operation
 
 ## Project Structure
+PredictiveMaintenanceAlertSystem/
+├── alert_generator.py       # Main module implementation
+├── alert_processor.py       # Alert processing and notification logic
+├── main.py                  # Demo script
+├── models/
+│   ├── init.py
+│   ├── alert.py             # Alert data models
+│   └── prediction.py        # Prediction data models
+├── utils/
+│   ├── init.py
+│   ├── config.py            # Configuration parameters
+│   └── logger.py            # Logging utilities
+├── tests/
+│   ├── init.py
+│   ├── test_alert_generator.py
+│   └── test_alert_processor.py
+├── verification/
+│   └── alert_model.pml      # Promela model for SPIN verification
+└── docs/
+└── diagrams/            # System diagrams
+## Setup Instructions
+
+### Prerequisites
+- Python 3.9 or higher
+- SPIN model checker (for verification)
+
+### Installation
+
+1. Clone the repository:
+   git clone https://github.com/StealthSpecter/PredictiveMaintenanceAlertSystem.git
+   cd PredictiveMaintenanceAlertSystem
+
+2. Set up a virtual environment (optional but recommended):
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. Install dependencies:
+   pip install -r requirements.txt
+   
+## Usage
+
+### Demo Execution
+To see the module in action with sample predictions:
+python3 main.py
+
+### Running Tests
+To execute the test suite:
+python3 -m unittest discover tests
+
+## Documentation
+
+For comprehensive documentation, including design diagrams, formal verification analysis, and quality evaluation, please refer to the [project report](docs/report.pdf).
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- National Institute of Technology Meghalaya
+- CS352 Software Engineering Lab
